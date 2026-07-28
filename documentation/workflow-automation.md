@@ -2,130 +2,94 @@
 
 ## Overview
 
-Workflow Automation was implemented to streamline reservation management by automatically categorizing wedding enquiries and scheduling timely follow-up activities. The automation reduces manual intervention, improves response time, and ensures reservation staff follow a standardized process when handling wedding bookings.
+Workflow automation was implemented in the Zoho CRM Hospitality Leads module to automate the handling of wedding reservation enquiries.
+
+The automation ensures that every wedding enquiry receives immediate attention, is prioritised appropriately, and generates a follow-up task without requiring manual intervention.
 
 ---
 
-# Workflow Rule
-
-## Rule Name
+## Workflow Name
 
 **Assign Wedding Reservations**
 
-### Module
+---
+
+## Module
 
 Leads
 
-### Trigger
+---
 
-- Record Action
-- Execute when a Lead record is created.
+## Trigger
 
-### Condition
-
-Booking Type(s) = Wedding
+- Execute On: Record Creation
+- Condition:
+  - Booking Type(s) = Wedding
 
 ---
 
-## Instant Action
+## Business Process
+
+When a new wedding reservation enquiry is created, Zoho CRM automatically classifies the enquiry as a priority reservation by updating the Lead Status to **Contacted**.
+
+One hour after the enquiry is created, the system generates a high-priority task assigned to the reservation coordinator to contact the bride and schedule an initial consultation.
+
+The task is due one day from the record creation date, ensuring timely follow-up while allowing the reservations team adequate time to prepare.
+
+---
+
+## Instant Actions
 
 ### Field Update
 
-Field Updated
+| Field | Value |
+|-------|-------|
+| Lead Status | Contacted |
 
-- Lead Status
+Purpose:
 
-Updated Value
-
-- Contacted
-
-Purpose
-
-Wedding enquiries are automatically marked as **Contacted** immediately after creation, indicating that the reservation team has begun processing the enquiry.
+- Immediately identifies the enquiry as being actively handled.
+- Removes the need for manual status updates.
+- Ensures reservation staff can quickly distinguish active enquiries from new submissions.
 
 ---
 
-## Scheduled Action
+## Scheduled Actions
 
-### Execution Time
+### Task Creation
 
-- 1 day after the Lead is created.
+| Property | Value |
+|----------|-------|
+| Subject | Schedule Meeting |
+| Priority | High |
+| Status | In Progress |
+| Assigned To | Reservation Coordinator |
+| Execution Time | 1 Hour After Record Creation |
+| Due Date | 1 Day After Record Creation |
 
-### Task Created
+Purpose:
 
-**Subject**
-
-- Schedule Meeting
-
-**Status**
-
-- In Progress
-
-**Priority**
-
-- High
-
-**Assigned To**
-
-- Lilian Onyeagba
-
-**Notification**
-
-- Notify assignee enabled.
-
-### Business Purpose
-
-Wedding reservations require early engagement with prospective clients. The automated task ensures that an Events Coordinator schedules an initial consultation with the bride to discuss:
-
-- Wedding date
-- Venue requirements
-- Expected number of guests
-- Accommodation requirements
-- Catering preferences
-- Decoration requirements
-- Payment schedule
-- Event logistics
-
-By automatically generating a high-priority follow-up task, the organization ensures that wedding enquiries receive prompt attention and consistent service.
+- Reminds the reservations team to promptly engage with the prospective client.
+- Encourages timely consultation and relationship building.
+- Reduces the likelihood of missed or delayed follow-up on high-value wedding enquiries.
 
 ---
 
-## Business Benefits
+## Business Value
 
-- Automatically identifies wedding enquiries.
-- Eliminates manual follow-up scheduling.
-- Ensures every wedding enquiry receives timely attention.
-- Standardizes reservation handling procedures.
-- Improves response time and customer experience.
-- Reduces the risk of missed follow-up activities.
+This workflow automation provides several operational benefits:
 
----
-
-## Configuration Summary
-
-| Component | Configuration |
-|-----------|---------------|
-| Module | Leads |
-| Trigger | Lead Created |
-| Condition | Booking Type(s) = Wedding |
-| Instant Action | Update Lead Status to Contacted |
-| Scheduled Action | Create Schedule Meeting Task |
-| Delay | 1 Day After Record Creation |
-| Task Priority | High |
-| Task Status | In Progress |
-| Notification | Enabled |
+- Eliminates repetitive manual task creation.
+- Standardises the handling of wedding reservations.
+- Improves response times for premium bookings.
+- Ensures accountability through automated task assignment.
+- Enhances customer experience by guaranteeing timely follow-up.
 
 ---
 
 ## Screenshots
 
-- Workflow Rules Overview
-- Wedding Reservation Workflow
-- Wedding Field Update Configuration
-- Wedding Scheduled Task Configuration
-
----
-
-## Consultant's Notes
-
-This workflow demonstrates Zoho CRM Workflow Automation by combining conditional logic, field updates, and scheduled tasks within a single business process. The implementation reduces manual effort while ensuring that wedding reservations follow a consistent operational workflow from enquiry through initial consultation.
+- `workflow-rule-overview.png`
+- `assign-wedding-reservations-workflow.png`
+- `wedding-booking-field-update.png`
+- `schedule-meeting-task.png`
