@@ -88,3 +88,23 @@ Configured values include:
 
 Replacing generic sales lead sources with hospitality-specific channels enables management to evaluate marketing effectiveness, identify the most successful booking channels, and allocate resources toward the highest-performing sources of guest enquiries.
 
+---
+
+# Reservation Details Section
+
+A custom section named **Reservation Details** was created to capture information required for hotel reservations.
+
+## Fields Added
+
+| Field | Type |
+|--------|------|
+| Booking Type | Pick List |
+| Check-in Date | Date |
+| Check-out Date | Date |
+| Number of Guests | Number |
+| Room Type | Pick List |
+| Number of Rooms | Number |
+
+## Consultant's Notes
+
+Standard CRM fields do not capture reservation-specific information required by the hospitality industry. The Reservation Details section was introduced to organize booking information in a structured format, making it easier for reservations staff to qualify enquiries and prepare quotations.
