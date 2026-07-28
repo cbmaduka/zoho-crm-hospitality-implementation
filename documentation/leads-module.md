@@ -57,3 +57,5 @@ Using the Leads module enables the hotel to:
 ## Consultant's Notes
 
 The Leads module is intentionally positioned as the entry point into the CRM because hospitality businesses receive enquiries from multiple channels. Qualifying enquiries before converting them into Contacts and Deals helps maintain accurate customer records, reduces duplicate data, and improves sales reporting.
+Replacing generic sales lead sources with hospitality-specific channels enables management to evaluate marketing effectiveness, identify the most successful booking channels, and allocate resources toward the highest-performing sources of guest enquiries.
+
