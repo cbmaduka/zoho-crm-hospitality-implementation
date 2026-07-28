@@ -196,3 +196,67 @@ The default value is **Medium**.
 ## Consultant's Notes
 
 This section provides internal visibility into who is responsible for each enquiry, which opportunities require urgent attention, and when the next follow-up should occur. The estimated booking value also supports pipeline reporting and helps management prioritize high-value opportunities.
+
+# Layout Rules
+
+## Overview
+
+Layout Rules were configured to dynamically adjust the reservation form based on the selected booking type. This reduces unnecessary data entry, improves user experience, and ensures that staff only see fields relevant to the reservation being processed.
+
+---
+
+## Configured Rules
+
+### Wedding
+
+Condition:
+- Booking Type(s) = Wedding
+
+Action:
+- Display the **Event Details** section.
+
+---
+
+### Business Travel
+
+Condition:
+- Booking Type(s) = Business Travel
+
+Action:
+- Display the **Corporate Booking Details** section.
+
+---
+
+### Group Booking
+
+Condition:
+- Booking Type(s) = Group Booking
+
+Action:
+- Display group reservation fields such as Number of Guests and Number of Rooms.
+
+---
+
+### Long Stay
+
+Condition:
+- Booking Type(s) = Long Stay
+
+Action:
+- Display long-stay reservation tracking fields.
+
+---
+
+## Business Benefits
+
+- Simplifies data entry
+- Reduces user error
+- Improves data quality
+- Displays only relevant reservation information
+- Provides a tailored experience for different reservation scenarios
+
+---
+
+## Consultant's Notes
+
+Dynamic Layout Rules were implemented to improve usability by adapting the reservation form to different booking scenarios. This minimizes unnecessary fields, improves operational efficiency, and helps reservation staff capture only the information required for each type of enquiry.
