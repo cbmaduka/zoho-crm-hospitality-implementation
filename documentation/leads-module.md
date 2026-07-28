@@ -128,3 +128,42 @@ The Guest Preferences section captures service-related information that helps pe
 ## Consultant's Notes
 
 Capturing guest preferences during the enquiry stage enables reservations staff to prepare accurate quotations and deliver a more personalized guest experience while reducing manual follow-up.
+
+---
+
+# Event Details
+
+The Event Details section captures information relating to weddings, conferences, seminars, celebrations, and other functions hosted by LuxeStay Hotels.
+
+## Fields Added
+
+| Field | Type |
+|--------|------|
+| Event Type | Pick List |
+| Event Date | Date |
+| Expected Attendees | Number |
+| Venue Required | Pick List |
+| Catering Required | Checkbox |
+
+## Event Type Values
+
+- Wedding
+- Conference
+- Seminar
+- Birthday
+- Anniversary
+- Corporate Event
+- Other
+
+## Venue Options
+
+- Grand Ballroom
+- Conference Hall A
+- Conference Hall B
+- Garden
+- Restaurant
+- Private Dining Room
+
+## Consultant's Notes
+
+The Event Details section allows event enquiries to be managed within the same CRM environment as accommodation enquiries. Capturing the event type, date, attendance estimate, venue preference, and catering requirement enables the hotel team to assess capacity, prepare quotations, and coordinate follow-up activities more efficiently.
