@@ -108,3 +108,23 @@ A custom section named **Reservation Details** was created to capture informatio
 ## Consultant's Notes
 
 Standard CRM fields do not capture reservation-specific information required by the hospitality industry. The Reservation Details section was introduced to organize booking information in a structured format, making it easier for reservations staff to qualify enquiries and prepare quotations.
+
+---
+
+# Guest Preferences
+
+The Guest Preferences section captures service-related information that helps personalize the guest experience.
+
+## Fields Added
+
+| Field | Type |
+|--------|------|
+| Preferred Contact Method | Pick List |
+| Meal Plan | Pick List |
+| Airport Pickup Required | Checkbox |
+| Loyalty Programme Member | Checkbox |
+| Special Requests | Multi-line Text |
+
+## Consultant's Notes
+
+Capturing guest preferences during the enquiry stage enables reservations staff to prepare accurate quotations and deliver a more personalized guest experience while reducing manual follow-up.
