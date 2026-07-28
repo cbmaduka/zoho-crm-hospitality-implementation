@@ -167,3 +167,32 @@ The Event Details section captures information relating to weddings, conferences
 ## Consultant's Notes
 
 The Event Details section allows event enquiries to be managed within the same CRM environment as accommodation enquiries. Capturing the event type, date, attendance estimate, venue preference, and catering requirement enables the hotel team to assess capacity, prepare quotations, and coordinate follow-up activities more efficiently.
+
+---
+
+# Internal Reservation Tracking
+
+The Internal Reservation Tracking section supports the hotel team in managing ownership, priority, estimated value, and follow-up activities for each enquiry.
+
+## Fields Added
+
+| Field | Type |
+|--------|------|
+| Assigned Reservation Officer | User Lookup |
+| Reservation Priority | Pick List |
+| Estimated Booking Value | Currency |
+| Follow-up Date | Date |
+| Follow-up Notes | Multi-line Text |
+
+## Reservation Priority Values
+
+- Low
+- Medium
+- High
+- VIP
+
+The default value is **Medium**.
+
+## Consultant's Notes
+
+This section provides internal visibility into who is responsible for each enquiry, which opportunities require urgent attention, and when the next follow-up should occur. The estimated booking value also supports pipeline reporting and helps management prioritize high-value opportunities.
