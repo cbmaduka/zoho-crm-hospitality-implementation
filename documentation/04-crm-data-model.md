@@ -2,101 +2,64 @@
 
 ## Overview
 
-The CRM data model defines how customer information will be organized within Zoho CRM to support sales, reservations, corporate partnerships, and guest relationship management.
+The LuxeStay Hotels CRM implementation is designed around a lead-driven reservation process. Guest enquiries enter the CRM through the Leads module, where reservation details are captured, qualified, and managed before conversion.
+
+The data model was designed to support hospitality reservation workflows while maintaining a structured customer lifecycle within Zoho CRM.
 
 ---
 
-# Modules
+# Primary Module
 
 ## Leads
 
-Stores prospective guests and new enquiries before qualification.
+The Leads module serves as the entry point for all guest enquiries, including accommodation requests, corporate bookings, and event reservations.
 
-Examples:
-
-- Website enquiry
-- Walk-in enquiry
-- Wedding enquiry
-- Corporate enquiry
-- Travel agency referral
+It stores reservation information, guest preferences, follow-up activities, and booking qualification details until the enquiry is ready to be converted.
 
 ---
 
-## Contacts
+# CRM Lifecycle
 
-Stores individual guests after qualification.
+The reservation process follows the lifecycle below:
 
-Examples:
+**Lead → Contact → Account → Deal**
 
-- Returning guests
-- VIP guests
-- Event organizers
-- Wedding clients
+- **Lead** captures the initial guest enquiry.
+- **Contact** represents the confirmed guest.
+- **Account** represents an organization for corporate bookings.
+- **Deal** represents a confirmed reservation opportunity.
 
----
-
-## Accounts
-
-Stores organizations.
-
-Examples:
-
-- ABC Oil Ltd
-- Zenith Bank Plc
-- Travel Nigeria Ltd
-- Global Conferences Ltd
+Although this implementation focuses primarily on the Leads module, the data model follows Zoho CRM's standard relationship between these modules.
 
 ---
 
-## Deals
+# Integrated CRM Features
 
-Represents booking opportunities.
+The Leads module is integrated with the following CRM components:
 
-Examples:
+- Layout Configuration
+- Custom Fields
+- Layout Rules
+- Validation Rules
+- Workflow Automation
+- Blueprint
+- Reports
+- Dashboards
+- Knowledge Base
 
-- Executive Suite Reservation
-- Corporate Accommodation Contract
-- Wedding Reception Booking
-- Conference Hall Reservation
-
----
-
-## Activities
-
-Tracks customer engagement.
-
-Includes:
-
-- Calls
-- Meetings
-- Follow-ups
-- Emails
-- Site visits
+These configurations work together to automate reservation management and improve operational efficiency.
 
 ---
 
-# Relationships
+# Business Value
 
-Lead
+This data model provides a structured framework for managing guest enquiries from initial contact through reservation confirmation.
 
-↓
-
-Contact
-
-↓
-
-Account
-
-↓
-
-Deal
-
-↓
-
-Activities
+The architecture supports consistent data capture, workflow automation, business reporting, and future scalability as additional CRM modules are implemented.
 
 ---
 
-# Expected Outcome
+## Screenshots
 
-The data model ensures customer information remains organized, searchable, and easy to report on throughout the sales lifecycle.
+- Leads Module Overview
+- Lead Record
