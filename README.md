@@ -1,6 +1,6 @@
 # LuxeStay Hotels Zoho CRM Implementation
 
-A complete Zoho CRM implementation for LuxeStay Hotels, a fictional luxury hospitality company.
+A portfolio project demonstrating the end-to-end implementation of Zoho CRM for a fictional luxury hospitality company, including CRM customization, workflow automation, blueprint configuration, dashboards, and reporting.
 
 <p align="center">
   <img src="screenshots/dashboards/01-dashboard-overview.png" width="100%">
@@ -83,7 +83,7 @@ zoho-crm-hospitality-implementation/
 
 ---
 
-# Project Walkthrough
+## Solution Walkthrough
 
 ## Layout Design
 
@@ -91,21 +91,21 @@ zoho-crm-hospitality-implementation/
 <tr>
 <td width="50%">
 
-<img src="screenshots/layouts/01-layout-overview.png" width="100%">
+<img src="screenshots/layouts/01-default-layout.png" width="100%">
 
-**Hospitality Lead Layout**
+**Default Leads Layout**
 
-A dedicated hospitality layout designed to capture guest enquiries, reservation information, and operational booking details.
+The standard Zoho CRM Leads layout before customization, providing the foundation for the hospitality-specific solution.
 
 </td>
 
 <td width="50%">
 
-<img src="screenshots/layouts/02-layout-design.png" width="100%">
+<img src="screenshots/layouts/02-hospitality-layout.png" width="100%">
 
-**Reservation Sections**
+**Customized Hospitality Layout**
 
-Logical grouping of reservation information, event details, corporate bookings, and internal reservation tracking.
+A fully customized hospitality layout designed to capture guest enquiries, reservation information, corporate bookings, event details, and internal reservation tracking.
 
 </td>
 </tr>
@@ -119,21 +119,33 @@ Logical grouping of reservation information, event details, corporate bookings, 
 <tr>
 <td width="50%">
 
-<img src="screenshots/custom-fields/01-reservation-fields.png" width="100%">
+<img src="screenshots/custom-fields/01-event-details-fields.png" width="100%">
 
-**Reservation Fields**
+**Event Details Fields**
 
-Custom fields for booking type, room details, stay duration, guest information, and reservation preferences.
+Custom fields created to capture event-specific information including event type, event date, venue requirements, catering requirements, and expected attendance.
 
 </td>
 
 <td width="50%">
 
-<img src="screenshots/custom-fields/02-operational-fields.png" width="100%">
+<img src="screenshots/custom-fields/02-corporate-booking-fields.png" width="100%">
 
-**Operational Fields**
+**Corporate Booking Fields**
 
-Internal reservation management fields supporting hotel staff workflows and follow-up activities.
+Dedicated fields for managing corporate reservations including company details, negotiated rates, expected annual bookings, and corporate contacts.
+
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+
+<img src="screenshots/custom-fields/03-guest-preferences-fields.png" width="70%">
+
+**Guest Preference Fields**
+
+Additional fields capture guest preferences such as meal plans, airport pickup requests, loyalty program participation, preferred contact method, and special requests.
 
 </td>
 </tr>
@@ -147,21 +159,21 @@ Internal reservation management fields supporting hotel staff workflows and foll
 <tr>
 <td width="50%">
 
-<img src="screenshots/layout-rules/01-dynamic-layout-rule.png" width="100%">
+<img src="screenshots/layout-rules/01-layout-rules-overview.png" width="100%">
 
-**Conditional Layout Rules**
+**Layout Rules Overview**
 
-Different reservation types dynamically display only the information relevant to that booking.
+Dynamic layout rules display relevant sections and fields based on the selected reservation type, simplifying data entry and improving user experience.
 
 </td>
 
 <td width="50%">
 
-<img src="screenshots/layout-rules/02-layout-rule-actions.png" width="100%">
+<img src="screenshots/layout-rules/02-business-travel-rule.png" width="100%">
 
-**Context-Aware Forms**
+**Business Travel Rule**
 
-Corporate, wedding, conference, and group reservations each reveal their appropriate sections and fields.
+Conditional logic automatically displays the Corporate Booking Details section whenever a Business Travel reservation is selected.
 
 </td>
 </tr>
@@ -177,9 +189,9 @@ Corporate, wedding, conference, and group reservations each reveal their appropr
 
 <img src="screenshots/validation-rules/01-validation-rules-overview.png" width="100%">
 
-**Validation Configuration**
+**Validation Rules Overview**
 
-Business rules ensure reservation data is entered correctly before records can be saved.
+Validation rules ensure reservation information meets business requirements before records can be saved.
 
 </td>
 
@@ -187,9 +199,9 @@ Business rules ensure reservation data is entered correctly before records can b
 
 <img src="screenshots/validation-rules/02-check-in-date-validation.png" width="100%">
 
-**Date Validation**
+**Check-in Date Validation**
 
-Reservation dates are validated to maintain accurate booking information.
+Business logic validates reservation dates to ensure accurate booking information and prevent invalid date entries.
 
 </td>
 </tr>
@@ -203,21 +215,21 @@ Reservation dates are validated to maintain accurate booking information.
 <tr>
 <td width="50%">
 
-<img src="screenshots/workflows/01-workflow-list.png" width="100%">
+<img src="screenshots/workflows/01-workflow-rules-overview.png" width="100%">
 
-**Workflow Configuration**
+**Workflow Rules Overview**
 
-Automation rules manage reservation activities and reduce manual administrative work.
+Workflow automation manages reservation activities, reduces manual effort, and standardizes reservation processing.
 
 </td>
 
 <td width="50%">
 
-<img src="screenshots/workflows/02-assign-wedding-reservations.png" width="100%">
+<img src="screenshots/workflows/02-wedding-reservation-workflow.png" width="100%">
 
-**Wedding Reservation Automation**
+**Wedding Reservation Workflow**
 
-Wedding enquiries automatically update reservation status and generate scheduled follow-up tasks.
+Wedding reservation enquiries automatically update reservation information and schedule follow-up activities for the reservation team.
 
 </td>
 </tr>
@@ -231,21 +243,21 @@ Wedding enquiries automatically update reservation status and generate scheduled
 <tr>
 <td width="50%">
 
-<img src="screenshots/blueprints/01-blueprint-overview.png" width="100%">
+<img src="screenshots/blueprints/01-contact-guest-transition.png" width="100%">
 
-**Reservation Lifecycle**
+**Contact Guest Transition**
 
-Blueprint standardizes the reservation process from enquiry through guest engagement.
+Defines the transition from the initial enquiry stage into active guest engagement within the reservation lifecycle.
 
 </td>
 
 <td width="50%">
 
-<img src="screenshots/blueprints/02-blueprint-transition.png" width="100%">
+<img src="screenshots/blueprints/02-after-transition-actions.png" width="100%">
 
-**Controlled Progression**
+**Transition Actions**
 
-Reservation stages follow a consistent operational workflow for every guest enquiry.
+Automated actions available during the Contact Guest transition help standardize reservation processing and improve operational consistency.
 
 </td>
 </tr>
@@ -259,21 +271,21 @@ Reservation stages follow a consistent operational workflow for every guest enqu
 <tr>
 <td width="50%">
 
-<img src="screenshots/dashboards/01-reservation-overview-dashboard.png" width="100%">
+<img src="screenshots/dashboards/01-dashboard-overview.png" width="100%">
 
-**Reservation Overview**
+**Reservation Dashboard**
 
-Provides management with a high-level view of reservation activity and booking performance.
+Provides management with a real-time overview of reservation activity, booking status, reservation officers, check-ins, and operational KPIs.
 
 </td>
 
 <td width="50%">
 
-<img src="screenshots/dashboards/02-reservation-pipeline-dashboard.png" width="100%">
+<img src="screenshots/dashboards/02-dashboard-builder.png" width="100%">
 
-**Reservation Pipeline**
+**Dashboard Builder**
 
-Tracks enquiries throughout the reservation lifecycle.
+Illustrates the dashboard design process used to configure hospitality analytics and management reporting.
 
 </td>
 </tr>
@@ -287,43 +299,21 @@ Tracks enquiries throughout the reservation lifecycle.
 <tr>
 <td width="50%">
 
-<img src="screenshots/reports/01-reservation-status-report.png" width="100%">
-
-**Reservation Status Report**
-
-Tracks reservation progress grouped by lead status.
-
-</td>
-
-<td width="50%">
-
-<img src="screenshots/reports/02-upcoming-check-ins-report.png" width="100%">
-
-**Upcoming Check-ins**
-
-Provides upcoming guest arrivals for operational planning.
-
-</td>
-</tr>
-
-<tr>
-<td width="50%">
-
-<img src="screenshots/reports/03-airport-pickup-schedule-report.png" width="100%">
-
-**Airport Pickup Schedule**
-
-Identifies arriving guests requiring transportation services.
-
-</td>
-
-<td width="50%">
-
-<img src="screenshots/reports/04-reservations-by-booking-type-report.png" width="100%">
+<img src="screenshots/reports/01-reservations-by-booking.png" width="100%">
 
 **Reservations by Booking Type**
 
-Analyzes reservation activity across booking categories.
+A reservation report grouped by booking type, lead status, room type, and guest count, providing operational insight into reservation trends and booking distribution.
+
+</td>
+
+<td width="50%">
+
+<img src="screenshots/reports/02-airport-pickup-schedule.png" width="100%">
+
+**Airport Pickup Schedule**
+
+A dedicated operational report identifying arriving guests who require airport transportation, including assigned reservation officers and check-in dates.
 
 </td>
 </tr>
@@ -341,7 +331,7 @@ Analyzes reservation activity across booking categories.
 
 **Reservation Records**
 
-Centralized management of hotel reservation enquiries.
+A centralized reservation workspace displaying guest enquiries, contact information, reservation sources, assigned reservation officers, and booking status.
 
 </td>
 
@@ -351,7 +341,7 @@ Centralized management of hotel reservation enquiries.
 
 **Reservation Details**
 
-Dedicated reservation information designed for hospitality operations.
+Custom reservation fields capture booking type, check-in and check-out dates, room preferences, guest count, and other essential reservation information.
 
 </td>
 </tr>
@@ -359,16 +349,15 @@ Dedicated reservation information designed for hospitality operations.
 <tr>
 <td colspan="2" align="center">
 
-<img src="screenshots/leads/03-internal-reservation-tracking-section.png" width="65%">
+<img src="screenshots/leads/03-internal-reservation-tracking-section.png" width="70%">
 
 **Internal Reservation Tracking**
 
-Operational fields supporting reservation ownership, follow-up activities, and internal coordination.
+Internal operational fields support reservation assignment, booking value estimation, follow-up scheduling, reservation priority, and staff coordination throughout the guest journey.
 
 </td>
 </tr>
 </table>
-
 ---
 
 ## Skills Demonstrated
@@ -393,3 +382,6 @@ Operational fields supporting reservation ownership, follow-up activities, and i
 **Chika Blessing**
 
 Executive Business Partner • Success Partner • Healthcare Operations Specialist • CRM & Workflow Automation • Project Manager • Executive Virtual Assistant • Customer Success
+
+---
+"Same warmth, wherever you find me."
