@@ -377,6 +377,14 @@ Internal operational fields support reservation assignment, booking value estima
 
 ---
 
+## Live Repository
+
+🔗 GitHub Repository:
+
+https://github.com/cbmaduka/zoho-crm-hospitality-implementation
+
+This repository contains the complete Zoho CRM hospitality implementation project, including CRM customization, business-specific layouts, custom fields, layout rules, validation rules, workflow automation, Blueprint, reports, dashboards, implementation documentation, and supporting screenshots demonstrating the complete setup from planning through deployment.
+
 ## Author
 
 **Chika Blessing**
